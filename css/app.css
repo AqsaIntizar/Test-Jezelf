@@ -1,0 +1,11 @@
+html{
+    width: 25%;
+    margin-left: 37.5%;
+}
+nav{
+    background-color:orange;
+    height: 70px;
+}
+.footer{
+    background-color: lightgray;
+}
