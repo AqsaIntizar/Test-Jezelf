@@ -1,6 +1,7 @@
 html{
     width: 25%;
     margin-left: 37.5%;
+    
 }
 nav{
     background-color:orange;
@@ -14,4 +15,7 @@ nav{
 }
 input{
     margin: 10px;
+}
+body{
+    background-color: #E8E4E4;
 }
