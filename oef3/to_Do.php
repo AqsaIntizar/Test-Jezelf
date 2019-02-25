@@ -3,7 +3,7 @@ $toDo = [
     [
       "beschrijving" => "series",
       "uren" => 7,
-      "categorie" => "le work"
+      "categorie" => "thuis"
     ],
     [
         "beschrijving" => "trainen",
@@ -23,11 +23,19 @@ $toDo = [
   ];
 
   foreach ($toDo as $do) {
-    echo '<h1>';
-    echo $do["beschrijving"];;
-    echo '</h1>';
+    echo '<div>';
+        echo '<h1>';
+        echo $do["beschrijving"];
+        echo '</h1>';
+        echo '<p>';
+        echo $do["uren"];
+        echo '</p>';
+        echo '<p>';
+        echo $do["categorie"];
+        echo '</p>';
+    echo '</div>';
   }
-  ?>
+?>
   <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -37,8 +45,11 @@ $toDo = [
       <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
       <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" />
       <title>oef3</title>
+      <style type="text/css"></style>
   </head>
   <body>
+ 
       
   </body>
   </html>
+  
