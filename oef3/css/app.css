@@ -1,22 +1,6 @@
-html{
-    width: 25%;
-    margin-left: 37.5%;
-    
+h1{
+    font-weight: 700;
 }
-nav{
-    background-color:orange;
-    height: 70px;
-}
-.footer{
-    background-color: lightgray;
-}
-.textarea{
-    height: 80px;
-}
-input{
-    margin: 10px;
-}
-.post__comments{
-    background-color: #E8E4E4;
-    padding: 10px;
+div{
+    margin: 20px;
 }
