@@ -1,3 +1,7 @@
+<?php
+  $page = $_SERVER['SCRIPT_NAME'];
+  echo basename($page);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
