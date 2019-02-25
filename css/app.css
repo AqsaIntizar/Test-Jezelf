@@ -9,3 +9,9 @@ nav{
 .footer{
     background-color: lightgray;
 }
+.textarea{
+    height: 80px;
+}
+input{
+    margin: 10px;
+}
