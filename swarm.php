@@ -56,10 +56,11 @@ $users = [
   <div class="post__comments">
 
         <?php foreach ($users as $user): ?><!-- Toon elke comment apart -->
-        <img src="
-            <?php     
-            echo $user['picture']; ?>" width=50px
-            >
+        <?php
+            if(!empty($user['picture'])){
+              echo '<img src="'. $user["picture"].'" width=50px>';
+            }
+            ?>
           <h1 class="post__comment">
             <?php 
             echo $user['username']; ?>
@@ -88,14 +89,17 @@ $users = [
             <?php
             echo $user['like']
             ?> 
-            " width=40px>
+            " width=40px></br>
+
             <?php
             if(!empty($user['img'])){
-              echo '<img src=">'. $user["img"].'>';
+              echo '<img src="'. $user["img"].'" width=140px>';
             }
             ?>
 
+
             <hr>
+            
 
         <?php endforeach; ?>
 
