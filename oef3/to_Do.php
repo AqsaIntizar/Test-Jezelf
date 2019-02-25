@@ -21,6 +21,12 @@ $toDo = [
         "categorie" => "school"
     ]
   ];
+
+  foreach ($toDo as $do) {
+    echo '<h1>';
+    echo $do["beschrijving"];;
+    echo '</h1>';
+  }
   ?>
   <!DOCTYPE html>
   <html lang="en">
