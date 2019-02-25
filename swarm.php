@@ -89,10 +89,12 @@ $users = [
             echo $user['like']
             ?> 
             " width=40px>
-            <img src="
-            <?php     
-            echo $user['img']; ?>" width=100%
-            >
+            <?php
+            if(!empty($user['img'])){
+              echo '<img src=">'. $user["img"].'>';
+            }
+            ?>
+
             <hr>
 
         <?php endforeach; ?>
