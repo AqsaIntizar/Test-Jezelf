@@ -1,6 +1,6 @@
 <?php
   $page = $_SERVER['SCRIPT_NAME'];
-  echo basename($page);
+  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +11,7 @@
     
     <title>Document</title>
 </head>
-<?php include_once('header.php'); ?>
+<?php include_once('nav.inc.php'); ?>
 <body>
     <h1>Contact</h1>
     <input type="text"></br>
