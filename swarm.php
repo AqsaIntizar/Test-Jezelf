@@ -9,7 +9,8 @@ $users = [
     "country" => "San Fransisco",
     "city" => "CA",
     "like" => "img/like.png",
-    "time" => "7m"
+    "time" => "7m",
+    "img" => "img/pic.jpeg"
   ],
   [
     "username" => "Bart",
@@ -27,7 +28,8 @@ $users = [
     "country" => "San Fransisco",
     "city" => "CA",
     "like" => "img/like.png",
-    "time" => "7m"
+    "time" => "7m",
+    "img" => "img/pic.jpeg"
   ]
 ];
 
@@ -83,8 +85,14 @@ $users = [
             echo $user['like']
             ?> 
             " width=40px>
+            <img src="
+            <?php     
+            echo $user['img']; ?>" width=100%
+            >
             <hr>
+
         <?php endforeach; ?>
+
         
 
       </div>
