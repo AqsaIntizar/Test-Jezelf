@@ -7,12 +7,12 @@ $toDo = [
     ],
     [
         "beschrijving" => "trainen",
-        "uren" => 2,
+        "uren" => 1,
         "categorie" => "thuis"
     ],
     [
         "beschrijving" => "wenen",
-        "uren" => 1,
+        "uren" => 3,
         "categorie" => "thuis"
     ],
     [
@@ -21,20 +21,6 @@ $toDo = [
         "categorie" => "school"
     ]
   ];
-
-  foreach ($toDo as $do) {
-    echo '<div>';
-        echo '<h1>';
-        echo $do["beschrijving"];
-        echo '</h1>';
-        echo '<p>';
-        echo $do["uren"];
-        echo '</p>';
-        echo '<p>';
-        echo $do["categorie"];
-        echo '</p>';
-    echo '</div>';
-  }
 ?>
   <!DOCTYPE html>
   <html lang="en">
@@ -48,7 +34,21 @@ $toDo = [
       <style type="text/css"></style>
   </head>
   <body>
- 
+        <?php foreach ($toDo as $t): ?>
+        <?php
+          if ($t["uren"] <= 2){
+            $color = "groen";
+          } else if($t["uren"] >= 5){
+            $color = "rood";
+          }else{
+            $color = "oranje";
+          }
+        ?>
+        <div class="task <?php echo $color; ?>">
+          <?php echo $t["beschrijving"]; ?> <br>
+          <?php echo $t["categorie"]; ?> <br>
+        </div>
+      <?php endforeach; ?>
       
   </body>
   </html>
