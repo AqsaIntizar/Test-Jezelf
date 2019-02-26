@@ -34,19 +34,19 @@ $toDo = [
       <style type="text/css"></style>
   </head>
   <body>
-        <?php foreach ($toDo as $t): ?>
+        <?php foreach ($toDo as $do): ?>
         <?php
-          if ($t["uren"] <= 2){
+          if ($do["uren"] <= 2){
             $color = "groen";
-          } else if($t["uren"] >= 5){
+          } else if($do["uren"] >= 5){
             $color = "rood";
           }else{
             $color = "oranje";
           }
         ?>
         <div class="task <?php echo $color; ?>">
-          <?php echo $t["beschrijving"]; ?> <br>
-          <?php echo $t["categorie"]; ?> <br>
+          <?php echo $do["beschrijving"]; ?> <br>
+          <?php echo $do["categorie"]; ?> <br>
         </div>
       <?php endforeach; ?>
       
